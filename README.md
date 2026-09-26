@@ -242,4 +242,3 @@ MIT License — bebas digunakan untuk belajar dan portfolio.
 
 Dibangun sebagai project belajar **Fullstack Laravel + Filament**.
 
-Kalau bermanfaat, berikan ⭐ di repository ini.
