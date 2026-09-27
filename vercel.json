@@ -1,27 +1,23 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "version": 2,
+  "$schema": "https://vercel.sh",
+  "outputDirectory": "public",
   "functions": {
     "api/index.php": {
       "runtime": "vercel-php@0.7.4"
     }
   },
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(build|css|js|fonts)/(.*)",
-      "dest": "/public/$1/$2"
+      "source": "/(build|css|js|fonts)/(.*)",
+      "destination": "/public/$1/$2"
     },
     {
-      "src": "/favicon.ico",
-      "dest": "/public/favicon.ico"
+      "source": "/(favicon.ico|robots.txt)",
+      "destination": "/public/$1"
     },
     {
-      "src": "/robots.txt",
-      "dest": "/public/robots.txt"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/api/index.php"
+      "source": "/(.*)",
+      "destination": "/api/index.php"
     }
   ],
   "env": {
