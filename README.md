@@ -207,29 +207,6 @@ resources/views/
 4. Submit → status `pending` + email konfirmasi  
 5. Admin konfirmasi / selesaikan / batalkan → customer dapat email status  
 
----
-
-## Screenshots
-
-> Tambahkan screenshot di sini setelah deploy / running lokal:
-
-- Halaman pilih layanan  
-- Form pilih staff & jam  
-- Riwayat booking  
-- Dashboard admin  
-- Tabel booking + tombol status  
-
-```markdown
-## Screenshots
-
-### Customer
-![Layanan](docs/screenshots/services.png)
-![Booking](docs/screenshots/booking-form.png)
-
-### Admin
-![Dashboard](docs/screenshots/admin-dashboard.png)
-![Bookings](docs/screenshots/admin-bookings.png)
-```
 
 ---
 
@@ -265,4 +242,3 @@ MIT License — bebas digunakan untuk belajar dan portfolio.
 
 Dibangun sebagai project belajar **Fullstack Laravel + Filament**.
 
-Kalau bermanfaat, berikan ⭐ di repository ini.
