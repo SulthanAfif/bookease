@@ -1,5 +1,6 @@
 {
   "$schema": "https://vercel.sh",
+  "outputDirectory": ".",
   "functions": {
     "api/index.php": {
       "runtime": "vercel-php@0.7.4"
