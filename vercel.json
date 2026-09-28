@@ -5,14 +5,14 @@
       "runtime": "vercel-php@0.7.4"
     }
   },
-  "rewrites": [
+  "routes": [
     {
       "source": "/(build|css|js|fonts)/(.*)",
-      "destination": "/public/$1/$2"
+      "destination": "/$1/$2"
     },
     {
       "source": "/(favicon.ico|robots.txt)",
-      "destination": "/public/$1"
+      "destination": "/$1"
     },
     {
       "source": "/(.*)",
