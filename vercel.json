@@ -1,23 +1,28 @@
 {
   "$schema": "https://vercel.sh",
-  "outputDirectory": ".",
-  "functions": {
-    "api/index.php": {
-      "runtime": "vercel-php@0.7.4"
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/index.php",
+      "use": "vercel-php@0.7.4"
+    },
+    {
+      "src": "public/**",
+      "use": "@vercel/static"
     }
-  },
+  ],
   "routes": [
     {
       "source": "/(build|css|js|fonts)/(.*)",
-      "destination": "/$1/$2"
+      "dest": "/public/$1/$2"
     },
     {
       "source": "/(favicon.ico|robots.txt)",
-      "destination": "/$1"
+      "dest": "/public/$1"
     },
     {
       "source": "/(.*)",
-      "destination": "/api/index.php"
+      "dest": "/api/index.php"
     }
   ],
   "env": {
